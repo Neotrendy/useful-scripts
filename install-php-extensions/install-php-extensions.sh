@@ -17,7 +17,7 @@ echo "Installing PHP extensions ..."
 # https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings
 
 # Required PHP extension
-php_extensions=("bcmath" "ctype" "curl" "dom" "fileinfo" "filter" "gd" "hash" "iconv" "intl" "json" "xml" "mbstring" "openssl" "pcre" "pdo_mysql" "soap" "sockets" "sodium" "tokenizer" "xsl" "zip" "zlib")
+php_extensions=("bcmath" "ctype" "curl" "dom" "fileinfo" "filter" "gd" "hash" "iconv" "intl" "json" "xml" "xmlrpc" "mbstring" "openssl" "pcre" "pdo_mysql" "soap" "sockets" "sodium" "tokenizer" "xsl" "zip" "zlib")
 
 for php_extension in "${php_extensions[@]}"
 do
