@@ -15,9 +15,11 @@ fi
 echo "Installing PHP extensions ..."
 # Based on Magento requirements
 # https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings
+# and Laravel requirements
+# https://laravel.com/docs/11.x/deployment#server-requirements
 
 # Required PHP extension
-php_extensions=("bcmath" "ctype" "curl" "dom" "fileinfo" "filter" "gd" "hash" "iconv" "intl" "json" "xml" "xmlrpc" "mbstring" "openssl" "pcre" "pdo_mysql" "soap" "sockets" "sodium" "tokenizer" "xsl" "zip" "zlib")
+php_extensions=("bcmath" "ctype" "curl" "dom" "fileinfo" "filter" "gd" "hash" "iconv" "intl" "json" "xml" "xmlrpc" "mbstring" "openssl" "pcre" "pdo_mysql" "session" "soap" "sockets" "sodium" "tokenizer" "xsl" "zip" "zlib")
 
 for php_extension in "${php_extensions[@]}"
 do
